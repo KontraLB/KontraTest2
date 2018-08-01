@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <H1>Bestrid en böter</H1>
+  <form action="" method="post">
+    {{ form.hidden_tag() }}
+    <p>
+      {{ form.violation.label }}<br />
+      {{ form.violation(size=32) }}
+      {% for error in form.violation.errors %}
+        <span style="color: red;">[{{ error }}]</span>
+      {% endfor %}
+    </p>
+    <p>
+      {{ form.place.label }}<br />
+      {% for subfield in form.place %}
+        <tr>
+          <td>{{ subfield }}</td>
+          <td>{{ subfield.label }}</td>
+        </tr>
+      {% endfor %}
+      {% for error in form.place.errors %}
+        <span style="color: red;">[{{ error }}]</span>
+      {% endfor %}
+    </p>
+    <p>{{ form.submit }}</p>
+  </form>
+{% endblock %}
