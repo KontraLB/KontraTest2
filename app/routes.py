@@ -1,3 +1,6 @@
+#!/usr/bin/python
+# -*- coding: <UTF-8> -*-
+
 from app import app
 from flask import render_template, redirect, flash, url_for
 from app.forms import TypeOneForm
@@ -14,3 +17,7 @@ def bestrid():
             form.place.data, form.violation.data))
         return redirect(url_for('index'))
     return render_template('bestrid.html', title="Bestrida", form=form)
+
+@app.route('/test')
+def test():
+    return render_template('producttest.html')

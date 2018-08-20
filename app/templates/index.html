@@ -1,6 +1,182 @@
 {% extends "base.html" %}
 
 {%block content%}
-  <h1>Välkommen till kontra!</h1>
-  <p>Vi vill hjälpa dig att bestrida parkeringsböter!</p>
+
+
+     <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+      <div class="col-md-5 p-lg-5 mx-auto my-5">
+        <h1 class="display-4 font-weight-normal">Kontra</h1>
+        <p class="lead font-weight-normal">Vi hjälper dig att överklaga parkeringdsböter</p>
+        <a class="btn btn-outline-secondary" href="{{ url_for('bestrid')}}">Bestrid böter</a>
+      </div>
+      <div class="product-device shadow-sm d-none d-md-block"></div>
+      <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+    </div>
+
+
+
+    <section class="bg-primary" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="section-heading text-white">Vi har det ni behöver!</h2>
+            <hr class="light my-4">
+            <p class="text-faded mb-4">Bestrid dina parkeringsböter snabbt och enkelt med vår helhetstjänst.</p>
+            <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Bestrid nu!</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Till er tjänst</h2>
+            <hr class="my-4">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fa fa-4x fa-diamond text-primary mb-3 sr-icons"></i>
+              <h3 class="mb-3">Snabb leverans</h3>
+              <p class="text-muted mb-0">Utan krångel</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fa fa-4x fa-paper-plane text-primary mb-3 sr-icons"></i>
+              <h3 class="mb-3">Bestrid böter på 3 minuter</h3>
+              <p class="text-muted mb-0">Betala endast vid vunnet mål.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fa fa-4x fa-newspaper-o text-primary mb-3 sr-icons"></i>
+              <h3 class="mb-3">Högre sannolikhet till vinst</h3>
+              <p class="text-muted mb-0">Vår historik visar att vår tjänst är bättre än att du gör det själv.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+       <section class="features16 cid-qyS1k5hHnP" id="features16-g" data-rv-view="889">
+
+    <div class="container align-center">
+        <h2 class="pb-3 mbr-fonts-style mbr-section-title display-2 text-center">
+            Vårt team</h2>
+
+        <div class="row media-row">
+
+        <div class="team-item col-lg-3 col-md-6" >
+                <div class="item-image">
+                    <img src="//assets/images/MS.png" alt="oliver" title="">
+                </div>
+                <div class="item-caption py-3">
+                    <div class="item-name px-2">
+                        <p class="mbr-fonts-style display-5">
+                           Anton Modin Svedberg
+                        </p>
+                    </div>
+                    <div class="item-role px-2">
+                        <p>CEO</p>
+                    </div>
+
+                </div>
+            </div><div class="team-item col-lg-3 col-md-6">
+                <div class="item-image">
+                    <img src="//assets/images/OLIVER.jpg" alt="oliver" title="">
+                </div>
+                <div class="item-caption py-3">
+                    <div class="item-name px-2">
+                        <p class="mbr-fonts-style display-5">
+                           Oliver Cedenheim
+                        </p>
+                    </div>
+                    <div class="item-role px-2">
+                        <p>COO</p>
+                    </div>
+
+                </div>
+            </div><div class="team-item col-lg-3 col-md-6">
+                <div class="item-image">
+                    <img src="assets/images/ERIK.jpg" alt="erik" title="" >
+                </div>
+                <div class="item-caption py-3">
+                    <div class="item-name px-2">
+                        <p class="mbr-fonts-style display-5">
+                           Erik Wiström
+                        </p>
+                    </div>
+                    <div class="item-role px-2">
+                        <p>CTO</p>
+                    </div>
+
+                </div>
+            </div><div class="team-item col-lg-3 col-md-6">
+                <div class="item-image">
+                    <img src="//app/assets/images/FREDDY.jpg" alt="freddy" title="" >
+                </div>
+                <div class="item-caption py-3">
+                    <div class="item-name px-2">
+                        <p class="mbr-fonts-style display-5">
+
+                        </p>
+                    </div>
+                    <div class="item-role px-2">
+                        <p>CFO</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+
+    <section class="cid-qySupntCRq bg-dark" id="social-buttons2-j" data-rv-view="901" >
+
+
+
+    <div class="mbr-overlay" style="opacity: 0.8; background-color: rgb(79, 73, 67);">
+    </div>
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="col-md-8 align-center">
+                <h2 class="pb-3 mbr-fonts-style display-2 text-center">
+                    Follow us!
+                </h2>
+                <div class="social-list pl-0 mb-0">
+                    <a href="https://twitter.com/mobirise" target="_blank">
+                        <span class="px-2 socicon-twitter socicon mbr-iconfont mbr-iconfont-social" media-simple="true"></span>
+                    </a>
+                    <a href="https://www.facebook.com/pages/Mobirise/1616226671953247" target="_blank">
+                        <span class="px-2 socicon-facebook socicon mbr-iconfont mbr-iconfont-social" media-simple="true"></span>
+                    </a>
+                    <a href="https://instagram.com/mobirise" target="_blank">
+                        <span class="px-2 socicon-instagram socicon mbr-iconfont mbr-iconfont-social" media-simple="true"></span>
+                    </a>
+                    <a href="https://www.youtube.com/c/mobirise" target="_blank">
+
+                    </a>
+                    <a href="https://plus.google.com/u/0/+Mobirise" target="_blank">
+
+                    </a>
+                    <a href="https://www.behance.net/Mobirise" target="_blank">
+
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
 {% endblock %}
