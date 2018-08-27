@@ -15,13 +15,18 @@
      <!-- Bootstrap core CSS -->
     <!-- <link href="/app/css/bootstrap.min.css" rel="stylesheet"> -->
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
 
     <!-- Custom styles for this template -->
    <!--<link href="app/css/product.css" rel="stylesheet">-->
 
       <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/product.css') }}" />
+      <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/creative.css') }}" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/creative.min.css') }}" />
 
-      <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/font-awesome.min.css') }}" />
+
+    <!--  <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/font-awesome.css') }}" /> -->
 
 
   </head>
@@ -37,8 +42,7 @@
           <a class="py-2 d-none d-md-inline-block" href="{{ url_for('test') }}">Testdesign</a>
       </div>
     </nav>
-    <hr />
-    <hr>
+
         {% with messages = get_flashed_messages() %}
         {% if messages %}
         <ul>

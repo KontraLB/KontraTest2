@@ -6,7 +6,7 @@
      <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
       <div class="col-md-5 p-lg-5 mx-auto my-5">
         <h1 class="display-4 font-weight-normal">Kontra</h1>
-        <p class="lead font-weight-normal">Vi hjälper dig att överklaga parkeringdsböter</p>
+        <p class="lead font-weight-normal">Vi hjälper dig att överklaga dina parkeringsböter</p>
         <a class="btn btn-outline-secondary" href="{{ url_for('bestrid')}}">Bestrid böter</a>
       </div>
       <div class="product-device shadow-sm d-none d-md-block"></div>
@@ -42,21 +42,21 @@
         <div class="row">
           <div class="col-lg-4 col-md-6 text-center">
             <div class="service-box mt-5 mx-auto">
-              <i class="fa fa-4x fa-diamond text-primary mb-3 sr-icons"></i>
+              <i class="fa fa-4x fa-shipping-fast text-primary mb-3 sr-icons"></i>
               <h3 class="mb-3">Snabb leverans</h3>
               <p class="text-muted mb-0">Utan krångel</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 text-center">
             <div class="service-box mt-5 mx-auto">
-              <i class="fa fa-4x fa-paper-plane text-primary mb-3 sr-icons"></i>
+              <i class="fa fa-4x fa-stopwatch text-primary mb-3 sr-icons"></i>
               <h3 class="mb-3">Bestrid böter på 3 minuter</h3>
               <p class="text-muted mb-0">Betala endast vid vunnet mål.</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 text-center">
             <div class="service-box mt-5 mx-auto">
-              <i class="fa fa-4x fa-newspaper-o text-primary mb-3 sr-icons"></i>
+              <i class="fa fa-4x fa-trophy text-primary mb-3 sr-icons"></i>
               <h3 class="mb-3">Högre sannolikhet till vinst</h3>
               <p class="text-muted mb-0">Vår historik visar att vår tjänst är bättre än att du gör det själv.</p>
             </div>
@@ -66,21 +66,20 @@
       </div>
     </section>
 
-       <section class="features16 cid-qyS1k5hHnP" id="features16-g" data-rv-view="889">
+       <section class="features16 bg-dark text-white cid-qyS1k5hHnP" id="features16-g" data-rv-view="889">
 
     <div class="container align-center">
-        <h2 class="pb-3 mbr-fonts-style mbr-section-title display-2 text-center">
-            Vårt team</h2>
+        <h2 class="pb-3 mbr-fonts-style mbr-section-title display-2 text-center">Vårt team</h2>
 
         <div class="row media-row">
 
-        <div class="team-item col-lg-3 col-md-6" >
-                <div class="item-image">
-                    <img src="{{ url_for('static', filename='assets/images/MS.png') }}" width='200' height='200' alt="MS" title="">
+        <div class="team-item col-lg-3 col-md-6 vcenter" >
+                <div class="item-image vcenter">
+                    <img class="center_image" src="{{ url_for('static', filename='assets/images/MSrund.png') }}"  alt="MS" title="">
                 </div>
                 <div class="item-caption py-3">
                     <div class="item-name px-2">
-                        <p class="mbr-fonts-style display-5">
+                        <p class="mbr-fonts-style display-5 vcenter">
                            Anton Modin Svedberg
                         </p>
                     </div>
@@ -90,8 +89,8 @@
 
                 </div>
             </div><div class="team-item col-lg-3 col-md-6">
-                <div class="item-image">
-                    <img src="{{ url_for('static', filename='assets/images/OLIVER.jpg') }}" width='200' height='200' alt="oliver" title="">
+                <div class="item-image vcenter">
+                    <img class="center_image" src="{{ url_for('static', filename='assets/images/OLIVERrund.png') }}" width='200' height='200' alt="oliver" title="">
                 </div>
                 <div class="item-caption py-3">
                     <div class="item-name px-2">
@@ -105,8 +104,8 @@
 
                 </div>
             </div><div class="team-item col-lg-3 col-md-6">
-                <div class="item-image">
-                    <img src="{{ url_for('static', filename='assets/images/ERIK.jpg') }}" width='200' height='200'  alt="erik" title="" >
+                <div class="item-image vcenter">
+                    <img class="center_image" src="{{ url_for('static', filename='assets/images/ERIKrund.png') }}" alt="erik" title="" >
                 </div>
                 <div class="item-caption py-3">
                     <div class="item-name px-2">
@@ -120,8 +119,8 @@
 
                 </div>
             </div><div class="team-item col-lg-3 col-md-6">
-                <div class="item-image">
-                    <img src="{{ url_for('static', filename='assets/images/FREDDY.jpg') }}" width='200' height="200" alt="freddy" >
+                <div class="item-image vcenter">
+                    <img class="center_image" src="{{ url_for('static', filename='assets/images/FREDDYrund.png') }}" alt="freddy" >
                 </div>
                 <div class="item-caption py-3">
                     <div class="item-name px-2">
@@ -139,10 +138,8 @@
     </div>
     </section>
 
-
+{#
     <section class="cid-qySupntCRq bg-dark" id="social-buttons2-j" data-rv-view="901" >
-
-
 
     <div class="mbr-overlay" style="opacity: 0.8; background-color: rgb(79, 73, 67);">
     </div>
@@ -155,13 +152,13 @@
                 </h2>
                 <div class="social-list pl-0 mb-0">
                     <a href="https://twitter.com/mobirise" target="_blank">
-                        <span class="px-2 socicon-twitter socicon mbr-iconfont mbr-iconfont-social" media-simple="true"></span>
+                        <span class="fas fa-4x fa-twitter text-primary mb-3 sr-icons"></span>
                     </a>
                     <a href="https://www.facebook.com/pages/Mobirise/1616226671953247" target="_blank">
-                        <span class="px-2 socicon-facebook socicon mbr-iconfont mbr-iconfont-social" media-simple="true"></span>
+                        <span class="fa fa-4x fa-trophy text-primary mb-3 sr-icons"></span>
                     </a>
                     <a href="https://instagram.com/mobirise" target="_blank">
-                        <span class="px-2 socicon-instagram socicon mbr-iconfont mbr-iconfont-social" media-simple="true"></span>
+                        <span class="fa fa-4x fa-trophy text-primary mb-3 sr-icons"></span>
                     </a>
                     <a href="https://www.youtube.com/c/mobirise" target="_blank">
 
@@ -177,6 +174,7 @@
         </div>
     </div>
 </section>
+    #}
 
 
 {% endblock %}
