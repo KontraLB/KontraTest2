@@ -319,12 +319,14 @@ header.masthead p {
         margin: auto;
         margin-left: auto;
         margin-right: auto;
-        text-align: center !important;
+        text-align: center;
+
       }
+
 .vcenter {
      display: flex;
      justify-content: center;
      align-items: center;
-    text-align: center !important;
+    text-align: center;
 
 }
