@@ -3,13 +3,13 @@
 {% block content %}
     <form action="" method="post">
     {{ form.hidden_tag() }}
-    {% for question in form %}
+    {% for question in form if question.name != "csrf_token" %}
         {% if not question == form.submit %}
             <p>
                 {{ question.label }}<br/>
                 {{ question(size = 32) }}
             </p>
-            {% for subfield in question %}
+            {% for subfield in question if subfield.name != "csrf_token" %}
                 <tr>
                 <td>{ subfield }</td>
                 <td>{ subfield.label} </td>
@@ -17,12 +17,6 @@
             {% endfor %}
         {% endif %}
     {% endfor %}
-    <p>
-      {{ form.violation.label }}<br />
-      {{ form.violation(size=32) }}
-      {% for error in form.violation.errors %}
-        <span style="color: red;">[{{ error }}]</span>
-      {% endfor %}
     <p>{{ form.submit }}</p>
     </form>
 {% endblock %}

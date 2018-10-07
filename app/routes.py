@@ -30,11 +30,11 @@ def test():
 @app.route('/bestrid01', methods=['GET', 'POST'])
 def bestrid01():
     form = ViolationOne()
-    return render_template('bestridxx.html', title='Bestrid', form = form)
+    return render_template('bestridxx.html', title='Bestrid', form=form)
 
 
 @app.route('/bestrid02', methods=['GET', 'POST'])
 def bestrid02():
     form = ViolationTwo()
-    return render_template('bestridxx.html', title='Bestrid', form = form)
+    return render_template('bestridxx.html', title='Bestrid', form=form)
 
