@@ -26,7 +26,7 @@ class Q02(FlaskForm):
 
     q2 = RadioField('Har du parkerat på en cykelbana?',
                     choices=[('yes', 'ja'), ('no', 'nej')])
-    submit = SubmitField('Klar')
+    submit = SubmitField('Nästa')
 
 
 class Q03(FlaskForm):
