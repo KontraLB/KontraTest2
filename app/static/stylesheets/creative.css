@@ -311,22 +311,17 @@ header.masthead p {
   box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
 }
 .item-image img{
-    width: 500px;
-    height: 500px;
-
+    width: 250px;
+    height: 250px;
 }
 .center_image {
         margin: auto;
-        margin-left: auto;
-        margin-right: auto;
         text-align: center;
-
       }
 
-.vcenter {
+.vcenter{
      display: flex;
      justify-content: center;
      align-items: center;
     text-align: center;
-
 }
