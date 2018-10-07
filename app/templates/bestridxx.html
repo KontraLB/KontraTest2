@@ -16,13 +16,10 @@
             <p>
                 {{ question.label }}<br/>
                 {{ question(size = 32) }}
+                {% for error in question.errors %}
+                 <span style="color: red;">[{{ error }}]</span>
+                {% endfor %}
             </p>
-            {% for subfield in question if subfield.name != "csrf_token" %}
-                <tr>
-                <td>{ subfield }</td>
-                <td>{ subfield.label} </td>
-                </tr>
-            {% endfor %}
         {% endif %}
     {% endfor %}
     <p>{{ form.submit }}</p>

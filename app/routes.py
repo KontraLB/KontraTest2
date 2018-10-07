@@ -2,21 +2,22 @@
 # -*- coding: <UTF-8> -*-
 
 from app import app
-from flask import render_template, redirect, flash, url_for
-from app.forms import TypeOneForm, ViolationOne, ViolationTwo
+from flask import render_template, redirect, flash, url_for, session
+from app.forms import TypeOneForm, Q01, Q02, Q03
+
 
 @app.route('/')
 def index():
     return render_template('index.html', title="Välkommen!")
 
+
 @app.route('/bestrid', methods=['GET','POST'])
 def bestrid():
     form = TypeOneForm()
     if form.validate_on_submit():
-        if form.violation.data == 1:
+        if form.violation.data:
+            session['violation'] = form.violation.data
             return redirect(url_for('bestrid01'))
-        elif form.violation.data == 2:
-            return redirect(url_for('bestrid02'))
         else:
             return redirect(url_for('index'))
     return render_template('bestrid.html', title="Bestrida", form=form)
@@ -29,12 +30,21 @@ def test():
 
 @app.route('/bestrid01', methods=['GET', 'POST'])
 def bestrid01():
-    form = ViolationOne()
+    # select from the list of violations.
+    violation = session.get('violation')
+    if violation == 1:
+        form = Q01()
+    elif violation == 2:
+        form = Q02()
+    elif violation == 3:
+        form = Q03()
+    # Do stuff with the formdata
+    if form.validate_on_submit():
+        message = []
+        for fieldname, value in form.data.items():
+            message.append([fieldname, value])
+        flash(message)
+        return redirect(url_for('index'))
     return render_template('bestridxx.html', title='Bestrid', form=form)
 
-
-@app.route('/bestrid02', methods=['GET', 'POST'])
-def bestrid02():
-    form = ViolationTwo()
-    return render_template('bestridxx.html', title='Bestrid', form=form)
 
