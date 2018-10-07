@@ -1,6 +1,14 @@
 {% extends 'base.html' %}
 
 {% block content %}
+             <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-left bg-light">
+    <div class="container">
+    <div class ="row">
+
+
+    <div class ="col-md-12">
+
+
     <form action="" method="post">
     {{ form.hidden_tag() }}
     {% for question in form if question.name != "csrf_token" %}
@@ -19,4 +27,8 @@
     {% endfor %}
     <p>{{ form.submit }}</p>
     </form>
+         </div>
+    </div>
+    </div>
+             </div>
 {% endblock %}
