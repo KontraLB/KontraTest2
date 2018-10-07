@@ -29,6 +29,7 @@ class Q03(FlaskForm):
                     choices=[('yes', 'ja'), ('no', 'nej')])
     q2 = RadioField('Har du parkerat mot färdriktningen, dvs på vänster sida i färdriktningen?',
                     choices=[('2.1.1', 'Ja men det fanns järnvägs- eller spårvagnsspår på högra sidan'),
-                             ('2.1.2', 'Ja men gatan var enkelriktad')])
+                             ('2.1.2', 'Ja men gatan var enkelriktad'),
+                             ('2.1.3', 'Nej')])
     q3 = RadioField('Fanns ett förbud mot parkering på vänster sida utmärkt med vägskylt?',
-                    choices=[('yes','ja'), ('no', 'nje')])
+                    choices=[('yes','ja'), ('no', 'nej')])
