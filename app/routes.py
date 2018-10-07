@@ -3,7 +3,7 @@
 
 from app import app
 from flask import render_template, redirect, flash, url_for, session
-from app.forms import TypeOneForm, ViolationOne, ViolationTwo
+from app.forms import TypeOneForm, Q01, Q02, Q03
 
 
 @app.route('/')
@@ -30,14 +30,15 @@ def test():
 
 @app.route('/bestrid01', methods=['GET', 'POST'])
 def bestrid01():
-    #select from the list of violations.
+    # select from the list of violations.
     violation = session.get('violation')
     if violation == 1:
-        form = ViolationOne()
+        form = Q01()
     elif violation == 2:
-        form = ViolationTwo()
-
-    #Do stuff with the formdata
+        form = Q02()
+    elif violation == 3:
+        form = Q03()
+    # Do stuff with the formdata
     if form.validate_on_submit():
         message = []
         for fieldname, value in form.data.items():
