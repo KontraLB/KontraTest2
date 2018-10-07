@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="050418bf-9c71-49f9-9a8f-a5628a878a90" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/app/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/bestridxx.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/bestridxx.html" afterDir="false" />
-    </list>
+    <list default="true" id="050418bf-9c71-49f9-9a8f-a5628a878a90" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
