@@ -39,7 +39,7 @@ h6 {
 }
 
 .bg-primary {
-  background-color: #F05F40 !important;
+  background-color: #0F7895 !important;
 }
 
 .bg-dark {
@@ -325,3 +325,11 @@ header.masthead p {
      align-items: center;
     text-align: center;
 }
+#testsub{
+  text-decoration-color: #005cbf !important;
+}
+.bg-test {
+  background-color: #0F7895 !important;
+}
+
+
