@@ -14,7 +14,7 @@
     {{ form.hidden_tag () }}
     {% for question in form if question.name != "csrf_token" %}
         {% if not question == form.submit %}
-            <p class="bg-test text-white font-weight-bold">
+            <p class="kbg-darkestblue text-white font-weight-bold">
                 {{ question.label }}<br/>
             </p>
             <ul class="text-left">

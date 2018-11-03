@@ -1,0 +1,46 @@
+.bg-test {
+  background-color: #0F7895 !important;
+}
+.kbg-dark{
+    background-color: #0A5064 !important;
+}
+.kbg-light{
+    background-color: #0F7895 !important;
+}
+.kbg-darkestblue{
+    background-color: #052832 !important;
+}
+.kbg-mediumlight{
+    background-color: #0F7895 !important;
+}
+.kbg-light{
+    background-color: #0F7895 !important;
+}
+.ktext-dark{
+    color: #0A5064 !important;
+}
+
+.kbg-test {
+    height: 100%;
+   /* height:100%;*/
+    /*background-position: center; !important;
+    background-repeat:no-repeat;
+    background-size: cover;*/
+   /* position:relative;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size: cover;*/
+    opacity: 0.65;
+}
+/*img{
+    width:1440px;
+    position:relative;
+}*/
+.kcaption{
+     position: absolute;
+    left:0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}

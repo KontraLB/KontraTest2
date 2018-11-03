@@ -1,6 +1,5 @@
 body,
 html {
-  width: 100%;
   height: 100%;
 }
 
@@ -11,7 +10,7 @@ body {
 hr {
   max-width: 50px;
   border-width: 3px;
-  border-color: #F05F40;
+  border-color: #0A5064;
 }
 
 hr.light {
@@ -327,9 +326,6 @@ header.masthead p {
 }
 #testsub{
   text-decoration-color: #005cbf !important;
-}
-.bg-test {
-  background-color: #0F7895 !important;
 }
 
 

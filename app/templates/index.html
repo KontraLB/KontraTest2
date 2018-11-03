@@ -3,15 +3,26 @@
 {%block content%}
 
 
-     <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
-      <div class="col-md-5 p-lg-5 mx-auto my-5">
-        <h1 class="display-4 font-weight-normal">Kontra</h1>
-        <p class="lead font-weight-normal">Vi hjälper dig att överklaga dina parkeringsböter</p>
-        <a class="btn btn-outline-secondary" href="{{ url_for('bestrid')}}">Bestrid böter</a>
-      </div>
-      <div class="product-device shadow-sm d-none d-md-block"></div>
-      <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+    <div class="overflow-hidden kbg-test">
+         <img src="{{ url_for('static', filename='assets/images/bgparking.jpg') }} " class="img-fluid">
+    <div class="kcaption">
+         <h1 class="font-weight-normal text-white">Kontra</h1>
+        <p class="font-weight-normal text-white">Vi hjälper dig att överklaga dina parkeringsböter</p>
+        <a class="btn btn-outline-secondary text-white" href="{{ url_for('bestrid')}}">Bestrid böter</a>
     </div>
+  </div>
+
+{#   <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">#}
+{#      <div class="col-md-5 p-lg-5 mx-auto my-5">#}
+{#     <h1 class="display-4 font-weight-normal">Kontra</h1>#}
+{#        <p class="lead font-weight-normal">Vi hjälper dig att överklaga dina parkeringsböter</p>#}
+{#        <a class="btn btn-outline-secondary" href="{{ url_for('bestrid')}}">Bestrid böter</a>#}
+{##}
+{##}
+{#      </div>#}
+{#      <div class="product-device shadow-sm d-none d-md-block"></div>#}
+{#      <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>#}
+   </div>
 
       <section id="services">
       <div class="container">
@@ -26,21 +37,21 @@
         <div class="row">
           <div class="col-lg-4 col-md-6 text-center">
             <div class="service-box mt-5 mx-auto">
-              <i class="fa fa-4x fa-shipping-fast text-primary mb-3 sr-icons"></i>
+              <i class="fa fa-4x fa-shipping-fast ktext-dark mb-3 sr-icons"></i>
               <h3 class="mb-3">Snabb leverans</h3>
               <p class="text-muted mb-0">Utan krångel</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 text-center">
             <div class="service-box mt-5 mx-auto">
-              <i class="fa fa-4x fa-stopwatch text-primary mb-3 sr-icons"></i>
+              <i class="fa fa-4x fa-stopwatch ktext-dark mb-3 sr-icons"></i>
               <h3 class="mb-3">Bestrid böter på under 3 minuter</h3>
               <p class="text-muted mb-0">Betala endast vid vunnet mål.</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 text-center">
             <div class="service-box mt-5 mx-auto">
-              <i class="fa fa-4x fa-trophy text-primary mb-3 sr-icons"></i>
+              <i class="fa fa-4x fa-trophy ktext-dark mb-3 sr-icons"></i>
               <h3 class="mb-3">Vi hjälper dig att vinna ditt mål</h3>
               <p class="text-muted mb-0">Vår historik visar att vår tjänst är bättre än att du gör det själv.</p>
             </div>
@@ -49,7 +60,7 @@
       </div>
     </section>
 
-    <section class="bg-primary" id="about">
+    <section class="kbg-darkestblue" id="about">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
