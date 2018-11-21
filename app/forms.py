@@ -16,7 +16,7 @@ class Q01(FlaskForm):
     q2 = RadioField('Har du parkerat på en cyckelbana eller gångbana?',
                          choices=[('jaCyckelbana', 'ja cyckelbana'), ('jaGångbana', 'Ja gångbana'), ('no', 'nej')],
                          validators=[DataRequired()])
-    submit = SubmitField('Nästa')
+    submit = SubmitField('Påbörja bestridan')
 
 
 
