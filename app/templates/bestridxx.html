@@ -10,11 +10,10 @@
 
 
     <form action="" method="post" class="form-control">
-
     {{ form.hidden_tag () }}
     {% for question in form if question.name != "csrf_token" %}
         {% if not question == form.submit %}
-            <p class="kbg-darkestblue text-white font-weight-bold">
+            <p class="kbg-darkestblue text-white font-weight-bold" data-toggle="tooltip" data-placement="top" title="Testis">
                 {{ question.label }}<br/>
             </p>
             <ul class="text-left">
@@ -23,15 +22,25 @@
                  <span style="color: red;">[{{ error }}]</span>
                 {% endfor %}
             </ul>
+
+
+
+
         {% endif %}
     {% endfor %}
     <p>{{ form.submit }}</p>
+
     </form>
+    {# Data läggs in under title-taggen#}
+
          </div>
+
 {#    <div class ="col-lg-6">#}
 {#            <i class="fa fa-4x fa-user-tie text-primary mb-3 sr-icons"></i>#}
 {#    </div>#}
     </div>
+                    <button type="button" class="btn btn-info" data-toggle="tooltip" data-placement="top" title="HÄR SKA DATA IN OM SVÅRA ORD" data-container="body"> INFO </button>
+
     </div>
              </div>
 {% endblock %}

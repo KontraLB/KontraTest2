@@ -71,5 +71,12 @@
       tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
     }
   });
-
+$(function () {
+  $('[data-toggle="popover"]').popover()
+})
+  $(function () {
+  $('.example-popover').popover({
+    container: 'body'
+  })
+})
 })(jQuery); // End of use strict
